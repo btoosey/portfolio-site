@@ -1,25 +1,27 @@
 .navbar {
   background: white;
-  padding: 8px, 0px;
   width: 100vw;
+  padding: 12px 0px;
+  display: fixed;
   h4 {
     font-size: 10px;
+    margin: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
   }
-}
-
-.navbar-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo {
   font-size: 14px;
+  font-family: Gilroy;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 0px;
 }
 
-.site-links {
-
+.nav-links {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 240px;
+  align-items: center;
 }
