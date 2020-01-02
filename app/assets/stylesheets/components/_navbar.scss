@@ -1,12 +1,27 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.navbar {
   background: white;
+  width: 100vw;
+  padding: 12px 0px;
+  display: fixed;
+  h4 {
+    font-size: 10px;
+    margin: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.logo {
+  font-size: 14px;
+  font-family: Gilroy;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 0px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  align-items: center;
 }
