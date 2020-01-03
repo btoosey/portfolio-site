@@ -1,0 +1,40 @@
+.home-intro-background {
+  background-color: #f7934b;
+  height: 125vh;
+  width: 50%;
+  z-index: 4;
+}
+
+.intro-wrapper {
+  padding: 40px;
+}
+
+.intro-h1 {
+  font-family: Gilroy, sans-serif;
+  font-weight: bolder;
+  font-size: 128px;
+  color: #1C1A20;
+  z-index: 5;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  div {
+    color: #f7934b;
+    display: inline;
+  }
+}
+
+.welcome-text {
+  font-family: Gilroy, sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  color: #1C1A20;
+  z-index: 5;
+  margin: 0px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
