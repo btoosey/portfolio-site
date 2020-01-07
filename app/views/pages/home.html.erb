@@ -1,36 +1,46 @@
 <div class="border-wrapper">
   <%= render 'shared/home_intro' %>
   <div class="content-container">
-    <h2>SKILLS</h2>
-    <h3>An overview of what I can do.</h3>
-    <div class="skills-list">
-      <div class="skills-front">
-        <h4>Front-end</h4>
-        <ul class="list-unstyled">
-          <li><p>HTML / CSS / SASS</p></li>
-          <li><p>JavaScript (ES6)</p></li>
-          <li><p>AJAX & DOM Events</p></li>
-        </ul>
+    <div class="skills">
+      <h2>SKILLS</h2>
+      <h3>An overview of what I can do.</h3>
+      <div class="skills-list">
+        <div class="skills-front">
+          <h4>Front-end</h4>
+          <ul class="list-unstyled">
+            <li><p>HTML / CSS / SASS</p></li>
+            <li><p>JavaScript (ES6)</p></li>
+            <li><p>AJAX & DOM Events</p></li>
+          </ul>
+        </div>
+        <div class="skills-back">
+          <h4>Back-end</h4>
+          <ul class="list-unstyled">
+            <li><p>Ruby</p></li>
+            <li><p>Ruby on Rails Framework</p></li>
+            <li><p>SQL & Database Structuring</p></li>
+            <li><p>JSON API Intergration</p></li>
+            <li><p>Parsing & Storing CSV / JSON / XML</p></li>
+            <li><p>Web Scraping</p></li>
+          </ul>
+        </div>
+        <div class="skills-product">
+          <h4>Product Development</h4>
+          <ul class="list-unstyled">
+            <li><p>Agile / Scrum Methodology</p></li>
+            <li><p>UX / UI Prototyping (Figma)</p></li>
+            <li><p>User Journey / Story Definition</p></li>
+          </ul>
+        </div>
       </div>
-      <div class="skills-back">
-        <h4>Back-end</h4>
-        <ul class="list-unstyled">
-          <li><p>Ruby</li>
-          <li><p>Ruby on Rails Framework</p></li>
-          <li><p>SQL & Database Structuring</p></li>
-          <li><p>JSON API Intergration</p></li>
-          <li><p>Parsing & Storing CSV / JSON / XML</p></li>
-          <li><p>Web Scraping</p></li>
-        </ul>
-      </div>
-      <div class="skills-product">
-        <h4>Product Development</h4>
-        <ul class="list-unstyled">
-          <li><p>Agile / Scrum Methodology</p></li>
-          <li><p>UX / UI Prototyping (Figma)</p></li>
-          <li><p>User Journey / Story Definition</p></li>
-        </ul>
-      </div>
+    </div>
+    <div class="projects">
+      <h2>PROJECTS</h2>
+        <% @web_projects.each do |project| %>
+          <h3><%= project.title %></h3>
+          <p>Web Application</p>
+          <%= link_to "See Project", web_project_path(project) %>
+        <% end %>
     </div>
   </div>
 </div>
