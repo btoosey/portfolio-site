@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-WebProject.create(title: "Artbeat", description: "Discover and save the art being shown around you. Find galleries, exhibitions and artists.")
-WebProject.create(title: "Atoll", description: "TODO")
+WebProject.create(title: "Artbeat", description: "As part of a two week project, I helped create the mobile-first web application, Artbeat. Artbeat is a response to the problem of not being able to find art galleries and exhibitions when visiting a new city. In a Pinterest-style mosaic, the user can explore local art pieces and save each one to their favourites, or a custom folder. Additional information about the art piece and the artist can be seen, as well as which gallery the piece is currently being shown.")
+WebProject.create(title: "Atoll", description: "In a 5-day sprint, Atoll was created for land-owners to host private islands. Atoll also allows users to search for available island based on location, view the island's description, and book it.")
