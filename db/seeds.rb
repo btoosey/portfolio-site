@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-WebProject.create(title: "Artbeat", home_description: "Discover and save the art being shown around you. Find galleries, exhibitions and artists.")
-WebProject.create(title: "Atoll", home_description: "TODO")
+WebProject.create(title: "Artbeat", description: "Discover and save the art being shown around you. Find galleries, exhibitions and artists.")
+WebProject.create(title: "Atoll", description: "TODO")
