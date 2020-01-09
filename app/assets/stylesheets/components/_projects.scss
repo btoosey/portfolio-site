@@ -1,0 +1,15 @@
+
+.back-arrow {
+  z-index: 12;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  h4 {
+    color: black;
+    padding-left: 8px;
+  }
+}

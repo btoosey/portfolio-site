@@ -1,5 +1,11 @@
 <div class="border-wrapper">
   <div class="content-container">
+    <%= link_to :back do %>
+      <div class="back-arrow">
+        <i class="fas fa-long-arrow-alt-left"></i>
+        <h4 class="txt">Back</h4>
+      </div>
+    <% end %>
     <h1><%= @web_project.title %></h1>
     <p><%= @web_project.description %></p>
     <a target="_blank", href=<%= @web_project.site_url %>  >Visit Project</a>
