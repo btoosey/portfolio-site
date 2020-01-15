@@ -1,7 +1,27 @@
 .projects {
   margin-top: 144px;
+  display: flex;
 }
 
 .project-card {
-  background-color: #2D8DA8;
+  background-color: #023F5C;
+  width: 240px;
+  height: 216px;
+  margin-bottom: 80px;
+  padding: 24px;
+  h3 {
+    padding-bottom: 0px;
+    color: white;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  right: 0px;
+  padding: 0px 40px;
+  margin-left: 32px;
 }
