@@ -39,9 +39,11 @@
     <div class="projects">
       <h2>PROJECTS</h2>
       <% @web_projects.each do |project| %>
+      <div class="project-card">
         <h3><%= project.title %></h3>
         <p>Web Application</p>
         <%= link_to "See Project", web_project_path(project) %>
+      </div>
       <% end %>
     </div>
   </div>
