@@ -36,13 +36,20 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects row">
       <h2>PROJECTS</h2>
-      <% @web_projects.each do |project| %>
-        <h3><%= project.title %></h3>
-        <p>Web Application</p>
-        <%= link_to "See Project", web_project_path(project) %>
-      <% end %>
+      <div class="project-cards">
+        <% @web_projects.each do |project| %>
+          <div class="column">
+            <%= link_to web_project_path(project) do %>
+              <div class="project-card">
+                <h3><%= project.title %></h3>
+                <p>Web Application</p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
