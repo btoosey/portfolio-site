@@ -4,7 +4,7 @@
     <div class="skills">
       <div>
         <h2>SKILLS</h2>
-        <p style="width: 280px;">I learnt most of what I know from the #1 coding bootcamp worldwide, Le Wagon. Here's an overview of what I can do:</p>
+        <p style="width: 280px;">After initially acquiring a BSc in Marine Zoology, I decided to pivot my career in the direction of web app development.<br><br>I learnt most of what I know from the #1 coding bootcamp worldwide, Le Wagon. Here's an overview of what I can do:</p>
       </div>
       <div class="skills-list">
         <div class="skills-front">
@@ -36,13 +36,16 @@
         </div>
       </div>
     </div>
-    <div class="projects row">
-      <h2>PROJECTS</h2>
-      <div class="project-cards">
+    <div class="projects">
+      <div>
+        <h2>PROJECTS</h2>
+        <p style="width: 280px;">Here's a list of some of my projects:</p>
+      </div>
+      <div class="project-cards row">
         <% @web_projects.each do |project| %>
           <div class="column">
             <%= link_to web_project_path(project) do %>
-              <div class="project-card">
+              <div class="project-card" style="background-image: url(<%= project.home_image %>), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
                 <h3><%= project.title %></h3>
                 <p>Web Application</p>
               </div>
