@@ -16,10 +16,11 @@
   margin: 0px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: 1s;
   div {
-    color: #f7934b;
+    color: #2F88A3;
     display: inline;
   }
 }
