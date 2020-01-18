@@ -46,8 +46,11 @@
           <div class="column">
             <%= link_to web_project_path(project) do %>
               <div class="project-card" style="background-image: url(<%= project.home_image %>), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
-                <h3><%= project.title %></h3>
-                <p>Web Application</p>
+                <%= image_tag project.home_image, alt: "#" %>
+                <div class="project-card-text">
+                  <h3><%= project.title %></h3>
+                  <p>Web Application</p>
+                </div>
               </div>
             <% end %>
           </div>
