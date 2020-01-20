@@ -2,7 +2,7 @@
 
 
   <div class="intro position-relative overflow-hidden top-0">
-    <div class="home-intro-background" style="background-image: url(<%= "../../assets/images/" + @web_project.home_image %>)"></div>
+    <%= image_tag (@web_project.home_image), alt: "alttext", class: "home-intro-background", style: "object-fit: cover; top: 0; left: 0" %>
     <h1 class="intro-h1"><%= @web_project.title %></h1>
     <h3 class="content-container welcome-text" style="margin-top: -18px"><%= @web_project.tagline %></h3>
     <div class="scroll-arrow">
