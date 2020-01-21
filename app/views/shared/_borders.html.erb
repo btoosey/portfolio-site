@@ -1,10 +1,14 @@
 <div class="top">
-  <h3 class="logo">BENJAMIN TOOSEY.</h3>
-  <div class="nav-links">
-    <div class="nav-btn">ABOUT</div>
-    <div class="nav-btn">PROJECTS</div>
-    <div class="nav-btn">CONTACT</div>
-  </div>
+  <%= link_to root_path do %>
+    <h3 class="logo">BENJAMIN TOOSEY.</h3>
+  <% end %>
+  <% if current_page?("/") %>
+    <div class="nav-links">
+      <div class="nav-btn" id="btn-about">ABOUT</div>
+      <div class="nav-btn" id="btn-projects">PROJECTS</div>
+      <div class="nav-btn" id="btn-contact">CONTACT</div>
+    </div>
+  <% end %>
 </div>
 <div class="bottom"></div>
 <div class="left"></div>
