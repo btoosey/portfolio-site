@@ -1,6 +1,4 @@
 <div class="border-wrapper">
-
-
   <div class="intro position-relative overflow-hidden top-0">
     <%= image_tag (@web_project.home_image), alt: "alttext", class: "home-intro-background", style: "object-fit: cover; top: 0; left: 0" %>
     <h1 class="intro-h1"><%= @web_project.title %></h1>
@@ -18,8 +16,23 @@
         <h4 class="txt">Back</h4>
       </div>
     <% end %>
-    <p><%= @web_project.description %></p>
-    <a target="_blank", href=<%= @web_project.site_url %>  >Visit Project</a>
-    <a target="_blank", href=<%= @web_project.source_url %>  >View Source</a>
+    <div class="skills">
+      <h2>ABOUT</h2>
+      <div class="about-info" style="padding: 0px 16px; margin-left: 144px;">
+        <p><%= @web_project.description %></p>
+        <a target="_blank", href=<%= @web_project.site_url %> >Visit Project</a>
+        <a target="_blank", href=<%= @web_project.source_url %> >View Source</a>
+      </div>
+    </div>
+    <div class="gallery">
+      <h2>GALLERY</h2>
+      <div class="show-images row">
+        <% @web_project_images.each do |image| %>
+          <div class="column">
+            <%= image_tag image.image_url, alt: "#", class: "show-image" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
