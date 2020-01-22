@@ -3,12 +3,20 @@
   display: flex;
 }
 
+.p-link {
+  color: #2F88A3;
+  font-weight: bold;
+  &:hover {
+    color: #2F88A3;
+  }
+}
+
 .skills-list {
   display: flex;
   background-color: #023F5C;
   right: 0px;
   padding: 40px;
-  margin-left: 32px;
+  margin-left: 40px;
   div {
     margin: 0px 16px;
     h4 {
