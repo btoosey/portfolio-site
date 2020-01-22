@@ -1,7 +1,7 @@
 .back-arrow {
   z-index: 12;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 60px;
   transform: translate(-50%, -50%);
@@ -11,4 +11,23 @@
     color: black;
     padding-left: 8px;
   }
+}
+
+.gallery {
+  display: flex;
+  margin: 160px 0px 96px 0px;
+}
+
+.show-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  width: 100%;
+  margin-left: 112px;
+  margin-right: 0px;
+}
+
+.show-image {
+  width: 320px;
+  margin-bottom: 40px;
 }
