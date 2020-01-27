@@ -1,4 +1,4 @@
-<div class="border-top">
+<div class="page-border border-top">
   <%= link_to root_path do %>
     <h3 class="logo">BENJAMIN TOOSEY.</h3>
   <% end %>
@@ -10,12 +10,25 @@
     </div>
   <% end %>
 </div>
-<div class="border-bottom"></div>
-<div class="border-left"></div>
-<div class="border-right">
+<div class="page-border border-bottom"></div>
+<div class="page-border border-left"></div>
+<div class="page-border border-right">
   <ul class="social-links">
     <li><a href="https://www.linkedin.com/in/benjamin-toosey" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
     <li><a href="https://www.github.com/btoosey" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
     <li><a href="https://www.instagram.com/code_toosey/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
   </ul>
+</div>
+
+<div class="small-device-nav">
+    <%= link_to root_path do %>
+    <h3 class="logo">BENJAMIN TOOSEY.</h3>
+  <% end %>
+  <% if current_page?("/") %>
+    <div class="nav-links">
+      <div class="nav-btn" id="btn-about">ABOUT</div>
+      <div class="nav-btn" id="btn-projects">PROJECTS</div>
+      <div class="nav-btn" id="btn-contact">CONTACT</div>
+    </div>
+  <% end %>
 </div>

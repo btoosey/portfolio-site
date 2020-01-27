@@ -1,11 +1,18 @@
-.border-top {
+.page-border {
   position: fixed;
+  background-color: white;
+  z-index: 10;
+}
+
+.border-wrapper {
+  padding: 40px;
+}
+
+.border-top {
   height: 40px;
   width: 100%;
   top: 0px;
   left: 0px;
-  background-color: white;
-  z-index: 10;
 }
 
 .logo {
@@ -46,33 +53,24 @@
 }
 
 .border-bottom {
-  position: fixed;
   height: 40px;
   width: 100%;
   bottom: 0px;
   left: 0px;
-  background-color: white;
-  z-index: 10;
 }
 
 .border-left {
-  position: fixed;
   width: 40px;
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: white;
-  z-index: 10;
 }
 
 .border-right {
-  position: fixed;
   width: 40px;
   height: 100%;
   top: 0px;
   right: 0px;
-  background-color: white;
-  z-index: 10;
   text-align: center;
 }
 
@@ -90,5 +88,28 @@
     a {
       color: black;
     }
+  }
+}
+
+.small-device-nav {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .small-device-nav {
+    display: flex;
+  }
+
+  .page-border {
+    display: none;
+  }
+
+  .border-wrapper {
+    padding: 0px;
+  }
+
+  .logo {
+    left: 16px;
+    position: fixed;
   }
 }
