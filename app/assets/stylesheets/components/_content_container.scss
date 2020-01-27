@@ -4,3 +4,10 @@
   width: 86%;
   float: right;
 }
+
+
+@media(max-width: 768px) {
+  .content-container {
+    width: 96%;
+  }
+}

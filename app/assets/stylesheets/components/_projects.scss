@@ -46,9 +46,52 @@
   width: 100%;
   margin-left: 112px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 .show-image {
   width: 320px;
   margin-bottom: 40px;
+}
+
+.about-info {
+  padding: 0px 16px;
+  margin-left: 144px;
+  margin-right: 16px;
+}
+
+
+@media(max-width: 768px) {
+  .back-arrow {
+    display: none;
+  }
+
+  .show-images {
+    display: block;
+    margin: 0px;
+  }
+
+  .show-image {
+    width: 92vw;
+  }
+
+  .gallery {
+    display: block;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .about-info {
+    margin: 0px;
+    padding: 0px;
+    padding: 0px 16px 0px 0px;
+  }
+
+  .project-buttons a {
+    display: block;
+    margin: 16px 0px 16px 0px;
+    text-align: center;
+  }
 }
