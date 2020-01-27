@@ -52,3 +52,23 @@
   margin-left: 40px;
   margin-right: 0px;
 }
+
+@media(max-width: 768px) {
+  .projects {
+    display: block;
+  }
+
+  .project-card {
+    margin-bottom: 40px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    margin-left: 0px;
+  }
+
+  .p-projects {
+    width: 96% !important;
+    margin-bottom: 40px;
+  }
+}
