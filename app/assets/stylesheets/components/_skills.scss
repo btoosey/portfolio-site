@@ -30,3 +30,23 @@
     }
   }
 }
+
+@media(max-width: 768px) {
+  .skills > div > p {
+    margin-right: 0px !important;
+    margin-bottom: 40px !important;
+    width: 96% !important;
+  }
+
+  .skills-list {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    div:first-child {
+      margin-bottom: 64px;
+    }
+    div:last-child {
+      margin-top: 64px;
+    }
+  }
+}
