@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= display_meta_tags %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Benjamin Toosey</title>
+    <title>Benjamin Toosey | Home</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Khula:800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/31887ad9cd.js" crossorigin="anonymous"></script>
     <%= favicon_link_tag %>
-    <meta property="og:title" content="Benjamin Toosey - Portfolio"/>
-    <meta property="og:description" content="Welcome to my personal portfolio website! Take a look at what I can do and previous projects I have worked on."/>
-    <meta property="og:image" content="../../assets/images/hellothere.png" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="912" />
   </head>
   <body style="background-color: rgb(248, 248, 248)">
     <%= render 'shared/borders' %>
