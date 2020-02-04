@@ -32,6 +32,10 @@
 }
 
 @media(max-width: 768px) {
+  .skills {
+    padding-top: 40px;
+  }
+
   .skills > div > p {
     margin-right: 0px !important;
     margin-bottom: 40px !important;

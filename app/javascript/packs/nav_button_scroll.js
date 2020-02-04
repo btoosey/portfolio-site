@@ -9,12 +9,12 @@ const buttonScroll = (event) => {
   }));
 
   buttonProjects.addEventListener('click', () => window.scrollTo({
-    top: 1128,
+    top: 1440,
     behavior: 'smooth',
   }));
 
   buttonContact.addEventListener('click', () => window.scrollTo({
-    top: 1600,
+    top: 1840,
     behavior: 'smooth',
   }));
 };
