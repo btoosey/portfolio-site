@@ -1,1 +1,46 @@
 // Specific CSS for your home-page
+
+.intro-paragraph {
+  width: 100%;
+  padding: 40px 0px;
+  display: inline-block;
+  background-color: white;
+  margin-top: 40px;
+  p {
+    margin: 0px;
+    margin-top: 8px;
+  }
+}
+
+.intro-content {
+  display: flex;
+}
+
+.avatar-headshot {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: auto 40px auto 0px;
+}
+
+@media(max-width: 768px) {
+  .intro-paragraph {
+    margin-top: 24px;
+  }
+
+  .intro-content {
+    display: block;
+  }
+
+  .avatar-headshot {
+    margin: 0px;
+    margin-bottom: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    padding-right: 16px;
+  }
+}
