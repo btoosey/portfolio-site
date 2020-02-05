@@ -1,11 +1,58 @@
 .contact-footer {
-  display: block;
-  width: 800px;
-  margin-bottom: 160px;
+  bottom: 0px;
+  width: 100%;
+  padding: 80px 0px;
+  margin: 0px !important;
+  display: inline-block;
+  background-color: white;
 }
 
 .footer-social-links {
   display: none;
+}
+
+.contact-form {
+  width: 584px;
+  button {
+    margin-top: -24px;
+  }
+}
+
+label {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #1C1A20;
+  p {
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+  }
+
+  .form-field {
+    border: black solid 1px;
+    padding: 4px 8px;
+    margin-left: 8px;
+    &:focus {
+      box-shadow: none;
+      border: red solid 1px;
+    }
+  }
+  textarea {
+    width: 488px;
+    height: 80px;
+    padding: 8px;
+    margin-left: 24px !important;
+  }
+}
+
+.form-first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .form-field {
+    width: 200px;
+  }
 }
 
 @media(max-width: 768px) {
@@ -18,6 +65,43 @@
     margin-bottom: 40px;
   }
 
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-first-row {
+    display: block;
+    width: calc(100% - 16px);
+    label {
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+    }
+    .form-field {
+      flex-grow: 1;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  label p {
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+  }
+
+  .email-field {
+    margin-left: 45px !important;
+  }
+
+  .message-field {
+    margin-right: 16px;
+    margin-left: 4px !important;
+    margin-top: -22px;
+  }
+
   .footer-social-links {
     display: flex;
     justify-content: space-evenly;
@@ -27,7 +111,14 @@
     width: 96%;
     font-size: 48px;
     li i {
-      color: black;
+      color: rgba(0, 0, 0, 0.3);
+      &:hover {
+        color: black;
+      }
     }
+  }
+
+  button {
+    width: calc(100% - 16px);
   }
 }
