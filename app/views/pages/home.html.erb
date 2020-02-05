@@ -4,7 +4,7 @@
     <div class="content-container">
       <div class="intro-content">
         <%= image_tag "Headshot.jpg", alt: "Benjamin Toosey, full-stack web developer", class: "avatar-headshot"%>
-        <p>I'm Ben, and I'm a full-stack web developer specialising in the Ruby on Rails framework.<br><br>After graduating university with a BSc in Marine Zoology, I decided to change career path and go in the direction of web app development.<br><br>I'm always trying to improve my work, and always wanting to help great people create amazing things.</p>
+        <p>I'm Ben, and I'm a full-stack web developer specialising in the Ruby on Rails framework.<br><br>After graduating university having studied Marine Zoology, I decided to change career path and go in the direction of web app development.<br><br>I'm always trying to improve my work, and always wanting to help great people create amazing things.</p>
       </div>
     </div>
   </div>
@@ -66,11 +66,32 @@
         <% end %>
       </div>
     </div>
-    <div class="contact-footer">
+  </div>
+  <div class="contact-footer">
+    <div class="content-container">
       <h2>LET'S CHAT.</h2>
       <div class="p-footer">
-        <p>If you have an idea for a website or product you'd like to build, I'd love to discuss it with you.</p>
-        <p>You can email me at <strong>contact@benjamintoosey.com</strong> or get in touch via social media.</p>
+        <p>If you have an idea for a website or product you'd like to build, I'd love to discuss it with you.<br><br>Fill out the form below to start a conversation!</p>
+        <form action="https://formspree.io/xyywjyol" method="POST" class="contact-form">
+          <div class="form-first-row">
+            <input type="hidden" name="_subject" value="New Form Submission" />
+            <label>
+              Full Name
+              <input type="text" name="name" class="form-field name-field">
+            </label>
+            <label>
+              Email
+              <input type="text" name="_replyto" class="form-field email-field">
+            </label>
+          </div>
+          <br>
+          <label class="d-flex">
+            <p>Message</p>
+            <textarea name="message" class="form-field message-field"></textarea>
+          </label>
+          <br>
+          <button type="submit" class="site-btn project-btn txt">Send</button>
+        </form>
       </div>
       <ul class="footer-social-links">
         <li><a href="https://www.linkedin.com/in/benjamin-toosey" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
