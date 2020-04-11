@@ -22,3 +22,5 @@ atoll = WebProject.create(title: "Atoll", description: "In a 5-day sprint, Atoll
 atoll_img_1 = WebProjectImage.create(web_project: atoll, image_url: "Atoll_1.png")
 atoll_img_2 = WebProjectImage.create(web_project: atoll, image_url: "Atoll_2.png")
 atoll_img_3 = WebProjectImage.create(web_project: atoll, image_url: "Atoll_3.png")
+
+mytoploc = WebProject.create(title: "MyTopLoc", description: "This freelance project involved creating a web application which allows tenants to request reviews from landlords to build a strong reputation as a tenant. The directory of tenants is continuing to increase, with many users using the service to review and be reviewed.", site_url: "https://www.mytoploc.com/", tagline: "Louez en toute confiance")
