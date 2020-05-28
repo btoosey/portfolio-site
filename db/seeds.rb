@@ -9,6 +9,12 @@
 WebProject.destroy_all
 WebProjectImage.destroy_all
 
+mytoploc = WebProject.create(title: "MyTopLoc", description: "This freelance project involved creating a web application which allows tenants to request reviews from landlords to build a strong reputation as a tenant. The directory of tenants is continuing to increase, with many users using the service to review and be reviewed.", site_url: "https://www.mytoploc.com/", home_image: "MyTopLoc.png", tagline: "Louez en toute confiance")
+
+mytoploc_img_1 = WebProjectImage.create(web_project: mytoploc, image_url: "MyTopLoc_1.png")
+mytoploc_img_2 = WebProjectImage.create(web_project: mytoploc, image_url: "MyTopLoc_2.png")
+mytoploc_img_3 = WebProjectImage.create(web_project: mytoploc, image_url: "MyTopLoc_3.png")
+
 artbeat = WebProject.create(title: "Artbeat", description: "As part of a two week project, I helped create the mobile-first web application, Artbeat. Artbeat is a response to the problem of not being able to find art galleries and exhibitions when visiting a new city. In a Pinterest-style mosaic, the user can explore local art pieces and save each one to their favourites, or a custom folder. Additional information about the art piece and the artist can be seen, as well as which gallery the piece is currently being shown.", site_url: "http://www.artbeat.world/", source_url: "https://github.com/gijsmaks/artbeat", home_image: "Artbeat.jpg", tagline: "Discover the world of art")
 
 artbeat_img_1 = WebProjectImage.create(web_project: artbeat, image_url: "Artbeat_1.png")
