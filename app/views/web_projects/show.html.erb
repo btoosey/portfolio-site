@@ -26,7 +26,9 @@
         <p style="margin-bottom: 40px"><%= @web_project.description %></p>
         <div class="project-buttons">
           <a target="_blank", href=<%= @web_project.site_url %> , class="txt project-btn site-btn">Visit Project</a>
-          <a target="_blank", href=<%= @web_project.source_url %> , class="txt project-btn source-btn">View Source</a>
+          <% if @web_project.source_url %>
+            <a target="_blank", href=<%= @web_project.source_url %> , class="txt project-btn source-btn">View Source</a>
+          <% end %>
         </div>
       </div>
     </div>
