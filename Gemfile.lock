@@ -178,6 +178,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (>= 5.2.4)
   autoprefixer-rails
   bootsnap
   dotenv-rails
@@ -187,7 +188,7 @@ DEPENDENCIES
   pg (~> 0.21)
   pry-byebug
   pry-rails
-  puma
+  puma (>= 4.3.5)
   rails (= 5.2.4)
   redis
   sassc-rails
