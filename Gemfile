@@ -5,7 +5,7 @@ gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem "puma", ">= 4.3.5"
-gem 'rails', '5.2.4'
+gem 'rails', '6.0.3.2'
 gem 'redis'
 
 gem 'autoprefixer-rails'
